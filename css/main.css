@@ -1,0 +1,61 @@
+:root {
+  --border-radius: 16px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  height: 100vh;
+  background: #19a2ae;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -120% 150%, 180% -80%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 325px;
+  height: 375px;
+  background-color: orange;
+  border-radius: var(--border-radius);
+}
+
+.card .card-header {
+  height: 140px;
+  background-image: url("../images/bg-pattern-card.svg");
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.card .card-body {
+  background: #eee;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.img-container img {
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=main.css.map */
