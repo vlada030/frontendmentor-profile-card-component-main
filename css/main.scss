@@ -1,5 +1,8 @@
 :root {
     --border-radius: 16px;
+    --light-gray: rgb(238, 238, 238);
+    --middle-gray: #e0dede;
+    --dark-gray: rgb(150, 150, 150);
 }
 
 *, *::before, *::after {
@@ -10,6 +13,7 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -18,17 +22,17 @@ body {
     background: hsl(185, 75%, 39%) ;
     background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: -120% 150%, 180% -80%;
-
+    //background-position: -120% 150%, 180% -80%;
+    // background-position: 130% 350%, -35% -240%;
+    background-position: -750px -600px, 150px 280px;
+    
     display: grid;
     place-items: center;
-
 }
 
 .card {
     width: 325px;
-    height: 375px;
-    background-color: orange;
+    // height: 375px;
     border-radius: var(--border-radius);
 
     .card-header {
@@ -39,21 +43,68 @@ body {
     }
 
     .card-body {
-        background: #eee;
-        position: relative;
-
+        background: var(--light-gray);    
+        border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);    
     }
 }
 
 .img-container {
     position: relative;
-    display: grid;
-    place-items: center;
 
     img {
         height: 95px;
         width: 95px;
         border-radius: 50%;
-        object-fit: contain;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid var(--light-gray);
+    }
+}
+
+.card-title {
+    padding-top: 68px;
+    text-align: center;
+
+    h3 {
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    span {
+        margin-left: 7px;
+        color: var(--dark-gray);
+        font-weight: 400;
+    }
+
+    p {
+        color: var(--dark-gray);
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+}
+
+.card-stats {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    text-align: center;
+    border-top: 1px solid var(--middle-gray);
+    
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+        color: var(--dark-gray);
+        text-transform: capitalize;
     }
 }
