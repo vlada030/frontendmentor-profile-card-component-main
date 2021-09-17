@@ -23,8 +23,8 @@ body {
     background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
     background-repeat: no-repeat, no-repeat;
     //background-position: -120% 150%, 180% -80%;
-    // background-position: 130% 350%, -35% -240%;
-    background-position: -750px -600px, 150px 280px;
+    //background-position: 130% 350%, -35% -240%;
+    background-position: calc(-750px + (100vw - 375px)/2 ) calc(-600px + (100vw - 375px)/7), bottom calc(-600px + (100vw - 375px)/7) right calc(-750px + (100vw - 375px)/2);
     
     display: grid;
     place-items: center;
@@ -46,6 +46,10 @@ body {
         background: var(--light-gray);    
         border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);    
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 350px;
     }
 }
 
@@ -90,10 +94,10 @@ body {
 }
 
 .card-stats {
-    padding: 25px 0;
+    padding: 25px 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     text-align: center;
     border-top: 1px solid var(--middle-gray);
