@@ -24,7 +24,7 @@ body {
     background-repeat: no-repeat, no-repeat;
     //background-position: -120% 150%, 180% -80%;
     //background-position: 130% 350%, -35% -240%;
-    background-position: calc(-750px + (100vw - 375px)/2 ) calc(-600px + (100vw - 375px)/7), bottom calc(-600px + (100vw - 375px)/7) right calc(-750px + (100vw - 375px)/2);
+    background-position: calc(-750px + (100vw - 375px)/2.3) calc(-600px + (100vw - 375px)/8), bottom calc(-600px + (100vw - 375px)/40) right calc(-750px + (100vw - 375px)/2.2);
     
     display: grid;
     place-items: center;

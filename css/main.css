@@ -23,7 +23,7 @@ body {
   background: #19a2ae;
   background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: calc(-750px + (100vw - 375px)/2) calc(-600px + (100vw - 375px)/7), bottom calc(-600px + (100vw - 375px)/7) right calc(-750px + (100vw - 375px)/2);
+  background-position: calc(-750px + (100vw - 375px)/2.3) calc(-600px + (100vw - 375px)/8), bottom calc(-600px + (100vw - 375px)/40) right calc(-750px + (100vw - 375px)/2.2);
   display: -ms-grid;
   display: grid;
   place-items: center;
